@@ -6,11 +6,11 @@
 /*   By: aichida <aichida@student.42tokyo.jp>       +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/04/23 20:09:53 by aichida           #+#    #+#             */
-/*   Updated: 2024/04/23 20:15:42 by aichida          ###   ########.fr       */
+/*   Updated: 2024/05/02 15:05:34 by aichida          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include <libft.h>
+#include "libft.h"
 
 size_t	ft_strlcpy(char *dst, const char *src, size_t size)
 {

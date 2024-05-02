@@ -6,11 +6,11 @@
 /*   By: aichida <aichida@student.42tokyo.jp>       +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/04/23 20:16:04 by aichida           #+#    #+#             */
-/*   Updated: 2024/04/23 20:16:07 by aichida          ###   ########.fr       */
+/*   Updated: 2024/05/02 15:05:13 by aichida          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include <libft.h>
+#include "libft.h"
 
 size_t	ft_strlen(const char *s)
 {

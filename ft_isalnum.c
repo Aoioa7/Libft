@@ -6,11 +6,11 @@
 /*   By: aichida <aichida@student.42tokyo.jp>       +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/04/23 19:37:42 by aichida           #+#    #+#             */
-/*   Updated: 2024/04/23 19:47:06 by aichida          ###   ########.fr       */
+/*   Updated: 2024/05/02 15:04:43 by aichida          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include <libft.h>
+#include "libft.h"
 
 int	ft_isalnum(int c)
 {
