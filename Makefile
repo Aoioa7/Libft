@@ -6,7 +6,7 @@
 #    By: aichida <aichida@student.42tokyo.jp>       +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2024/04/23 18:08:20 by aichida           #+#    #+#              #
-#    Updated: 2024/05/02 11:13:08 by aichida          ###   ########.fr        #
+#    Updated: 2024/05/02 14:58:04 by aichida          ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
@@ -51,15 +51,15 @@ $(NAME): $(OBJS)
 ###
 
 clean:
-		rm -rf $(OBJS)
+		rm -rf $(OBJS) $(OBJSB)
 
 fclean: clean
 		rm -rf $(NAME)
 
 re: fclean all
 
-bonus: $(OBJS) $(OBJSB)
-       ar rcs $(NAME) $(OBJS) $(OBJSB)
+bonus: ${NAME} ${OBJSB}
+	ar rcs ${NAME} ${OBJSB}
 
 ###
 

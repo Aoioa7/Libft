@@ -6,9 +6,11 @@
 /*   By: aichida <aichida@student.42tokyo.jp>       +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/05/02 10:05:46 by aichida           #+#    #+#             */
-/*   Updated: 2024/05/02 10:07:41 by aichida          ###   ########.fr       */
+/*   Updated: 2024/05/02 14:45:38 by aichida          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
+
+#include "libft.h"
 
 void	ft_putchar_fd(char c, int fd)
 {

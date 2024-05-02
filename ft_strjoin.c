@@ -6,7 +6,7 @@
 /*   By: aichida <aichida@student.42tokyo.jp>       +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/05/01 14:15:14 by aichida           #+#    #+#             */
-/*   Updated: 2024/05/01 14:23:44 by aichida          ###   ########.fr       */
+/*   Updated: 2024/05/02 14:44:58 by aichida          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -20,7 +20,7 @@ char	*ft_strjoin(const char *s1, const char *s2)
 
 	if (!s1 || !s2)
 		return (0);
-	res = (char *)malloc((sizeof(char) * (st_strlen(s1) + ft_strlen(s2) + 1)));
+	res = (char *)malloc((sizeof(char) * (ft_strlen(s1) + ft_strlen(s2) + 1)));
 	if (!res)
 		return (0);
 	i = 0;

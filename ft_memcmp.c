@@ -6,7 +6,7 @@
 /*   By: aichida <aichida@student.42tokyo.jp>       +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/04/28 16:58:53 by aichida           #+#    #+#             */
-/*   Updated: 2024/04/28 17:16:42 by aichida          ###   ########.fr       */
+/*   Updated: 2024/05/02 14:42:08 by aichida          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -18,6 +18,7 @@ int	ft_memcmp(const void *s1, const void *s2, size_t n)
 
 	if (n == 0)
 		return (0);
+	i = 0;
 	while ((((unsigned char *)s1)[i] == ((unsigned char *)s2)[i]) && i < n - 1)
 	{
 		i++;

@@ -6,7 +6,7 @@
 /*   By: aichida <aichida@student.42tokyo.jp>       +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/05/01 14:25:02 by aichida           #+#    #+#             */
-/*   Updated: 2024/05/02 09:51:26 by aichida          ###   ########.fr       */
+/*   Updated: 2024/05/02 14:25:50 by aichida          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -44,7 +44,7 @@ static int	count_words(const char *str, char c)
 	return (count);
 }
 
-static	put_word(char *word, const char *str, int i, int word_len)
+static void	put_word(char *word, const char *str, int i, int word_len)
 {
 	int	j;
 
