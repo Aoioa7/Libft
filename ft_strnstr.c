@@ -6,7 +6,7 @@
 /*   By: aichida <aichida@student.42tokyo.jp>       +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/04/28 16:24:26 by aichida           #+#    #+#             */
-/*   Updated: 2024/05/02 14:51:26 by aichida          ###   ########.fr       */
+/*   Updated: 2024/05/10 11:16:14 by aichida          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -19,6 +19,8 @@ char	*ft_strnstr(const char *str, const char *find, size_t n)
 
 	if (!find[0])
 		return ((char *)str);
+	if (!n)
+		return (0);
 	i = 0;
 	while (str[i])
 	{

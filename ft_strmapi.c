@@ -6,7 +6,7 @@
 /*   By: aichida <aichida@student.42tokyo.jp>       +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/05/02 10:23:05 by aichida           #+#    #+#             */
-/*   Updated: 2024/05/02 10:34:41 by aichida          ###   ########.fr       */
+/*   Updated: 2024/05/10 13:12:06 by aichida          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -18,14 +18,14 @@ char	*ft_strmapi(const char *s, char (*f)(unsigned int, char))
 	unsigned int	len;
 	char			*res;
 
-	if (!s)
+	if (!s || !f)
 		return (0);
 	len = ft_strlen(s);
-	res = malloc(len * sizeof(char) + 1);
+	res = malloc((len + 1) * sizeof(char));
 	if (!res)
 		return (0);
 	i = 0;
-	while (i <= len - 1)
+	while (s[i])
 	{
 		res[i] = (*f)(i, s[i]);
 		i++;
