@@ -46,16 +46,16 @@ SRCSB = ft_lstnew_bonus.c ft_lstsize_bonus.c \
 all: $(NAME)
 
 $(NAME): $(OBJS)
-	ar rcs $(NAME) $(OBJS)
+	@ar rcs $(NAME) $(OBJS)
 
 bonus: $(NAME) $(OBJSB)
-	ar rcs $(NAME) $(OBJSB)
+	@ar rcs $(NAME) $(OBJSB)
 
 clean:
-	rm -rf $(OBJS) $(OBJSB)
+	@rm -rf $(OBJS) $(OBJSB)
 
 fclean: clean
-	rm -rf $(NAME)
+	@rm -rf $(NAME)
 
 re: fclean all
 
