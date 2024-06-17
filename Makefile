@@ -6,7 +6,7 @@
 #    By: aichida <aichida@student.42tokyo.jp>       +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2024/04/23 18:08:20 by aichida           #+#    #+#              #
-#    Updated: 2024/05/02 15:56:36 by aichida          ###   ########.fr        #
+#    Updated: 2024/06/18 05:14:10 by aichida          ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
@@ -36,10 +36,6 @@ SRCSB = ft_lstnew_bonus.c ft_lstsize_bonus.c \
 	 ft_lstlast_bonus.c ft_lstdelone_bonus.c \
 	 ft_lstclear_bonus.c ft_lstiter_bonus.c ft_lstmap_bonus.c
 
-ifdef WITH_BONUS
-	OBJS += $(OBJSB)
-endif
-
 ###
 
 .c.o:
@@ -52,7 +48,8 @@ all: $(NAME)
 $(NAME): $(OBJS)
 	ar rcs $(NAME) $(OBJS)
 
-###
+bonus: $(NAME) $(OBJSB)
+	ar rcs $(NAME) $(OBJSB)
 
 clean:
 	rm -rf $(OBJS) $(OBJSB)
@@ -61,10 +58,5 @@ fclean: clean
 	rm -rf $(NAME)
 
 re: fclean all
-
-bonus:
-	@make all WITH_BONUS=1
-
-###
 
 .PHONY: all clean fclean re bonus
